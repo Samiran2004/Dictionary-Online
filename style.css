@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    /* position: relative; */
+}
+
+header {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+#main {
+    width: 50vw;
+    /* height: 30vh; */
+    background-color: aliceblue;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#inputBox {
+    display: flex;
+    align-items: center;
+
+}
+
+#inputBox input {
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    border: 20px;
+    border: none;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+#submitBtn button {
+    height: 80px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+}
+
+#resultBxo {
+    padding: 20px;
+}
+
+#resultBox h1 {
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@media screen and (max-width: 802px) {
+    body {
+        background-color: red;
+    }
+
+    #inputBox input {
+        height: 80px;
+        width: 100%;
+        text-align: center;
+        border: 20px;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    #main {
+        position: static;
+        width: 300px;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #resultBox h1 {
+        padding: 5px;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    header {
+        margin-bottom: 30%;
+    }
+
+    @keyframes animation {
+        100% {
+            scale: 1;
+        }
+
+        50% {
+            scale: 2.1;
+        }
+    }
